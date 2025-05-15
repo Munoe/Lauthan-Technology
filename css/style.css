@@ -147,11 +147,14 @@ body{
     display: none;
 }
 
-.home{
+.home {
     min-height: 100vh;
     width: 100vw;
     background-image: url(../images/img1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    background-attachment: scroll;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +164,23 @@ body{
     position: relative;
     overflow: hidden !important;
 }
+
+@media (max-width: 768px) {
+  .home {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .home h1 {
+    font-size: 3.5rem;
+  }
+
+  .home h2 {
+    font-size: 2rem;
+  }
+}
+
 
 .home h1{
     color: #fff;
